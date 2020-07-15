@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/_run.dir/main.cpp.o CMakeFiles/_run.dir/median.cpp.o  -o _run 

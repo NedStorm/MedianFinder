@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/_tst.dir/main.cpp.o CMakeFiles/_tst.dir/median-test.cpp.o  -o _tst  ../src/lib_lib.a ../lib/libgtestd.a -lpthread 

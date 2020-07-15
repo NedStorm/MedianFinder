@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMedian_lib.a  CMakeFiles/Median_lib.dir/main.cpp.o CMakeFiles/Median_lib.dir/median.cpp.o
+/usr/bin/ranlib libMedian_lib.a

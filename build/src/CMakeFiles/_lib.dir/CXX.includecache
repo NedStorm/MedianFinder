@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kali/Median/src/main.cpp
+bits/stdc++.h
+-
+median.h
+/home/kali/Median/src/median.h
+
+/home/kali/Median/src/median.cpp
+median.h
+/home/kali/Median/src/median.h
+bits/stdc++.h
+-
+
+/home/kali/Median/src/median.h
+bits/stdc++.h
+-
+
