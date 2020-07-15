@@ -1,6 +1,8 @@
 #include "median.h"
 #include <bits/stdc++.h>
 using namespace std;
+
+//function for calculating the median
 double median(vector<double> f,int number)
 {
 	sort(f.begin(), f.end());
