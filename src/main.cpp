@@ -3,43 +3,51 @@
 
 using namespace std;
 
-//calculating the median function
-/*void median(vector<double> f,int number)
+//just for printing the vector (to look nice on the output)
+void print(vector<double> v, int n)
 {
-	if(number%2==0)
+	sort(v.begin(), v.end());
+	cout << "current list: ";
+	for(int i=0; i<n;i++)
 	{
-		cout<<"median: "<<(f[number/2-1]+f[number/2])/2<<endl;
+		cout<<v[i]<<" ";
 	}
-	else
-	{
-		cout<<"median: " << f[number/2]<<endl;
-	}	
-}*/
+	cout<<endl;
+}
+//main
 int main()
 {
+	//dynamic memory
 	vector<double> numbers;
 	double x;
+	//counting the number of elements in the vector
 	int counter = 0;
 	while(true)
 	{
-		cout<<"please enter a number or 0 to exit:";
+		cout<<"Please enter a number or enter 0 to exit:";
 		cin>>x;
+		//check to enter only numbers
 		if(cin.fail())
 		{
 			cin.clear();
 			cin.ignore();
 		}
+		//if a number is entered proceed with finding the median
 		else
 		{
+			//if the user enters 0 end the program
 			if(x==0)
 			{
 				exit(0);
 			}
 			numbers.push_back(x);
 			counter +=1;
+			
+			//calculate the median only if there are at least 2 elements
 			if(counter>1)
 			{
-				cout << "median: " << median(numbers,counter) << endl;
+				print(numbers, counter);
+				cout << "median: " << median(numbers,counter) << endl;	
 			}
 		}
 	}	
